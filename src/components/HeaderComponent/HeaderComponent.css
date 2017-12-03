@@ -1,0 +1,13 @@
+.headerComponent {
+  background: #999; }
+  .headerComponent__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222;
+    padding: 10px 30px;
+    display: inline-block; }
+    .headerComponent__link:hover {
+      color: #fff; }
+    .headerComponent__link_active {
+      background: #42426D;
+      color: #fff; }
