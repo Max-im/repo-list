@@ -8,21 +8,25 @@ class HeaderComponent extends Component {
     return (
       <div className="headerComponent">
         <div className="container">
+         
           <Link 
             activeClassName="headerComponent__link_active"
             className="headerComponent__link" 
             to="/repoList">repoList
           </Link>
-           <Link 
+          
+          <Link 
             activeClassName="headerComponent__link_active"
             className="headerComponent__link" 
             to="/favorits">favorits
           </Link>
-           <Link 
+          
+          <Link 
             activeClassName="headerComponent__link_active"
             className="headerComponent__link" 
-            to="/moreInfo">moreInfo
+            to="/moreInfo">more-Info
           </Link>
+          
         </div>
       </div>
     );

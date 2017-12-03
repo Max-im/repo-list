@@ -1,0 +1,10 @@
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+.listItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dadada;
+  padding: 10px; }
