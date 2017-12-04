@@ -19,7 +19,7 @@ import NotFound from './components/NotFound/NotFound';
 
 const store = createStore(reducer);
 
-
+// store.subscribe( () => console.log(store.getState()))
 
 ReactDOM.render(
   <Provider store={store}>

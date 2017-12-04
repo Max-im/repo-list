@@ -33,7 +33,8 @@ ul, li {
     width: 250px; }
   .listItem__descr {
     width: 300px;
-    color: #999; }
+    color: #999;
+    margin: 0 20px 0 0; }
   .listItem__link {
     text-decoration: none;
     color: #42426D;
@@ -53,3 +54,5 @@ ul, li {
       transition: all .3s;
       color: gold;
       transform: scale(1.3); }
+    .listItem__btn_fav {
+      color: gold; }

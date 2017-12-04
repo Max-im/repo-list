@@ -3,8 +3,14 @@ import './ListComponent.css';
 
 
 class ListComponent extends Component {
+  constructor(){
+    super();
+    this.state = {
+      isSowed: false
+    }
+  }
   render() {
-    const {item, index, clickHandler} = this.props;
+    const {item, index, clickHandler, fav} = this.props;
     return (
       <li className="listItem" key={item.id}>
           <div className="listItem__content">
@@ -28,8 +34,8 @@ class ListComponent extends Component {
           </div>
 
           <p 
-            className="fa fa-star-o listItem__btn"
-            onClick={() => clickHandler(item)}>
+            className={fav ? "fa fa-star listItem__btn listItem__btn_fav" : "fa fa-star-o listItem__btn"}
+            onClick={ () =>  clickHandler(item.id) }>
           </p>
         </li>
     );

@@ -1,5 +1,6 @@
 import { ADD_TO_FAVORITE, DEL_FROM_FAVORITE, FETCH_DATA } from '../constants';
 
+
 export const fetchData = (data) => {
   const action = {
     type: FETCH_DATA,
@@ -9,10 +10,10 @@ export const fetchData = (data) => {
 }
 
 
-export const addItem = (item) => {
+export const addItem = (id) => {
   const action = {
     type: ADD_TO_FAVORITE,
-    item
+    id
   }
   return action;
 }

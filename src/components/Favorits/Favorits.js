@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import './Favorits.css';
 import ListComponent from '../ListComponent/ListComponent';
+import { delItem } from '../../actions';
 
 
 class Favorits extends Component {
@@ -19,7 +20,8 @@ class Favorits extends Component {
                   key={item.id}
                   item={item}
                   index={index} 
-                  clickHandler={this.props.addItem} 
+                  fav='true'
+                  clickHandler={this.props.delItem} 
                 />
               )
              }) 
@@ -37,4 +39,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, null)(Favorits);
+export default connect(mapStateToProps, { delItem })(Favorits);

@@ -33,9 +33,10 @@ class RepoList extends Component {
 }
 
 function mapStateToProps(state) {
+  
   return {
     state
   }
 }
 
-export default connect( mapStateToProps, {addItem} )(RepoList);
+export default connect( mapStateToProps, { addItem } )(RepoList);
