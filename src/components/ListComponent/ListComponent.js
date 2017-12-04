@@ -4,25 +4,34 @@ import './ListComponent.css';
 
 class ListComponent extends Component {
   render() {
-    const renderList = this.props.data.map((item, index)=>{
-      return(
-        <li className="listItem" key={index}>
-          <span>{item.name}</span>
-          <span>{item.descr}</span>
-          <a href={item.link}>{item.name}</a>
-          <img alt={item.author} src={item.thumbnail} />
-          <span>{item.author}</span>
-          <button 
-            onClick={this.props.clickHandler}
-            type="button">+</button>
-        </li>
-      )
-    })
-    
+    const {item, index, clickHandler} = this.props;
     return (
-      <ul>
-        {renderList}
-      </ul>
+      <li className="listItem" key={item.id}>
+          <div className="listItem__content">
+            
+            <span className="listItem__number">{index + 1}</span>
+            
+            <div className="listItem__autorInfo">
+              <img alt={'s'} className="listItem__img" src={item.owner.avatar_url} />
+              <span>{item.owner.login}</span>
+            </div>
+            
+            <h4 className="listItem__title">{item.name}</h4>
+            
+            <span className="listItem__descr">{item.description}</span>
+            
+            <a target="_blank" 
+              className="listItem__link fa fa-link" 
+              href={item.html_url}>
+            </a>
+
+          </div>
+
+          <p 
+            className="fa fa-star-o listItem__btn"
+            onClick={() => clickHandler(item)}>
+          </p>
+        </li>
     );
   }
 }

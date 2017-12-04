@@ -20,6 +20,7 @@ import NotFound from './components/NotFound/NotFound';
 const store = createStore(reducer);
 
 
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={ hashHistory }> 
