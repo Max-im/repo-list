@@ -21,12 +21,6 @@ class HeaderComponent extends Component {
             to="/favorits">favorits
           </Link>
           
-          <Link 
-            activeClassName="headerComponent__link_active"
-            className="headerComponent__link" 
-            to="/moreInfo">more-Info
-          </Link>
-          
         </div>
       </div>
     );
