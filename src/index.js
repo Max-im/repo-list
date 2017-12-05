@@ -14,6 +14,7 @@ import App from './components/App/App';
 import RepoList from './components/RepoList/RepoList';
 import Favorits from './components/Favorits/Favorits';
 import MoreInfo from './components/MoreInfo/MoreInfo';
+import Single from './components/Single/Single';
 import NotFound from './components/NotFound/NotFound';
 
 
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route path="/" component={ App }>
         <IndexRedirect to="repoList" />
         <Route path="/repoList" component={ RepoList } />
+        <Route path='/repoList/single/:id' component={Single} />
         <Route path="/favorits" component={ Favorits } />
         <Route path="/moreInfo" component={ MoreInfo } />
         <Route path="/**" component={ NotFound } />

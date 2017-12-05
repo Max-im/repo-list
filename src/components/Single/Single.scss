@@ -1,0 +1,10 @@
+.single{
+  h2{
+    color: #999;
+  }
+  &__projectName{
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #42426D;
+  }
+}

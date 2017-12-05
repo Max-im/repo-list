@@ -10,6 +10,7 @@ ul, li {
   padding: 10px;
   margin: 5px 0;
   background: #eee;
+  position: relative;
   align-items: center; }
   .listItem__content {
     display: flex;
@@ -56,3 +57,11 @@ ul, li {
       transform: scale(1.3); }
     .listItem__btn_fav {
       color: gold; }
+  .listItem__contributersBtn {
+    position: absolute;
+    color: #42426D;
+    bottom: 5px;
+    right: 39px;
+    cursor: pointer; }
+    .listItem__contributersBtn:hover {
+      color: #6e6ea7; }

@@ -15,4 +15,13 @@ body {
 
 a{
   outline: none;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.hide{
+  display: none !important;
 }

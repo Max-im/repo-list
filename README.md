@@ -50,9 +50,11 @@
 | 1       | Consider the project                        | 1     |
 | 2       | Environment init, structure the project     | 1     |
 | 3       | Routing implementation                      | 0.5   |
-| 5       | Create Header and NotFound (404) components | 0.5   |
+| 4       | Create Header and NotFound (404) components | 0.5   |
+| 5       | Implement fetch data, addToFav, removeFromFav | 4   |
+| 5       | Add contributors info                       | 1   |
 | 12      | Refactoring,  correct readme                |       |
-|         | TOTAL                                       | __3__|
+|         | TOTAL                                       | __8__|
 
 
 

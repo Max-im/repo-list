@@ -11,6 +11,7 @@ ul, li{
   padding: 10px;
   margin: 5px 0;
   background: #eee;
+  position: relative;
   align-items: center;
   &__content{
     display: flex;
@@ -66,6 +67,16 @@ ul, li{
     }
     &_fav{
       color: gold;
+    }
+  }
+  &__contributersBtn{
+    position: absolute;
+    color: #42426D;
+    bottom: 5px;
+    right: 39px;
+    cursor: pointer;
+    &:hover{
+      color: lighten(#42426D, 20%);
     }
   }
 }
