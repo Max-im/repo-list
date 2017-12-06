@@ -40,7 +40,7 @@ class Favorits extends Component {
             </p>
           </div>
 
-          <ul>
+          <ul className="listWrapper">
             {
              this.props.state.repoList.map((item, index) => {
               return(

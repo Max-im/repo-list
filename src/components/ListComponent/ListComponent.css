@@ -65,3 +65,60 @@ ul, li {
     cursor: pointer; }
     .listItem__contributersBtn:hover {
       color: #6e6ea7; }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .listWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .listContent {
+    width: 48%; }
+  .listItem {
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    .listItem__content {
+      flex-wrap: wrap; }
+    .listItem__number {
+      font-size: 50px;
+      margin: 0 20px 0 0;
+      display: block;
+      width: 50px; }
+    .listItem__img {
+      width: 80px; }
+    .listItem__title {
+      width: 100%; }
+    .listItem__descr {
+      width: 100%;
+      margin: 0 0px 20px 0; }
+    .listItem__btn {
+      position: absolute;
+      margin: 0;
+      bottom: 15px;
+      right: 50px; }
+    .listItem__contributersBtn {
+      bottom: 15px;
+      right: 15px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .listItem__title {
+    word-wrap: break-word;
+    font-size: 12px; }
+  .listItem__descr {
+    word-wrap: break-word;
+    margin: 0 0px 20px 0; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .listContent {
+    width: 100%; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

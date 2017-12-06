@@ -80,3 +80,168 @@ ul, li{
     }
   }
 }
+
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.listWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listContent{
+  width: 48%;
+}
+
+.listItem{
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  &__content{
+    flex-wrap: wrap;
+  }
+  &__number{
+    font-size: 50px;
+    margin: 0 20px 0 0;
+    display: block;
+    width: 50px;
+  }
+  &__img{
+    width: 80px;
+  }
+  &__title{
+    width: 100%;
+  }
+  &__descr{
+    width: 100%;
+    margin: 0 0px 20px 0;
+  }
+  &__btn{
+    position: absolute;
+    margin: 0;
+    bottom: 15px;
+    right: 50px;
+  }
+  &__contributersBtn{
+    bottom: 15px;
+    right: 15px;
+  }
+}  
+
+
+}
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+.listItem{
+  &__title{
+    word-wrap:  break-word;
+    font-size: 12px;
+  }
+  &__descr{
+    word-wrap:  break-word;
+    margin: 0 0px 20px 0;
+  }
+}  
+
+
+ 
+}
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.listContent{
+  width: 100%;
+}
+
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+}

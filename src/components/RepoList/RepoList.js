@@ -13,7 +13,7 @@ class RepoList extends Component {
       isSortByName: true
     }
   }
-  
+
   render() {
     return (
       <div className="app">
@@ -39,7 +39,7 @@ class RepoList extends Component {
             </p>
           </div>
           
-          <ul>
+          <ul className="listWrapper">
             {
              this.props.state.fetchData.map((item, index) => {
               return(
