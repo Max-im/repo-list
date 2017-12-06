@@ -8,11 +8,11 @@ import HeaderComponent from '../HeaderComponent/HeaderComponent';
 class App extends Component {
   
   componentDidMount(){
-    const target = 'defunkt';
-    const url = `https://api.github.com/users/${target}/repos`;
-    fetch(url, {method: 'GET'})
-      .then(raw => raw.json())
-      .then(json => this.props.fetchData(json));
+      const target = 'defunkt';
+      const url = `https://api.github.com/users/${target}/repos`;
+      fetch(url, {method: 'GET'})
+        .then(raw => raw.json())
+        .then(json => this.props.fetchData(json));
   }
 
   render() {

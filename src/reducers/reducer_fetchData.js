@@ -5,17 +5,24 @@ import {
   SORT_BY_ID,
   SORT_BY_NAME } from '../constants';
 
+
+// console.log(JSON.parse(localStorage.getItem('repoList')))
 export let stateData = [];
 
-export default ( state = stateData, action ) => {
+const arrData = ( state = stateData, action ) => {
+  if(JSON.parse(localStorage.getItem('repoList'))){
+    state = JSON.parse(localStorage.getItem('repoList')).fetchData;
+  }
   switch ( action.type ) {
-    
     case FETCH_DATA:
       stateData.push(...action.data);
+      if(JSON.parse(localStorage.getItem('repoList'))){
+        return state;
+      }
       return action.data;
 
     case ADD_TO_FAVORITE:
-      const filtred = state.filter(item => item.id !== action.id)
+      const filtred = state.filter(item => item.id !== action.id);
       return filtred;
 
     case DEL_FROM_FAVORITE:
@@ -23,7 +30,7 @@ export default ( state = stateData, action ) => {
       return [...state, added].sort((a, b) => a['name'] > b['name'] ? 1 : -1);
 
     case SORT_BY_ID:
-      const sortedId = action.arr.sort((a, b) => parseInt(a['id']) - parseInt(b['id']));
+      const sortedId = action.arr.sort((a, b) => parseInt(a['id'],10) - parseInt(b['id'],10));
       return [...sortedId];
 
     case SORT_BY_NAME:
@@ -34,3 +41,6 @@ export default ( state = stateData, action ) => {
       return state;
   }
 }
+
+
+export default arrData;

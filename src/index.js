@@ -19,7 +19,9 @@ import NotFound from './components/NotFound/NotFound';
 
 const store = createStore(reducer);
 
-// store.subscribe( () => console.log(store.getState()))
+store.subscribe( () => {
+  localStorage.setItem('repoList', JSON.stringify(store.getState()));
+})
 
 ReactDOM.render(
   <Provider store={store}>

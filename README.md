@@ -52,9 +52,12 @@
 | 3       | Routing implementation                      | 0.5   |
 | 4       | Create Header and NotFound (404) components | 0.5   |
 | 5       | Implement fetch data, addToFav, removeFromFav | 4   |
-| 5       | Add contributors info                       | 1   |
-| 12      | Refactoring,  correct readme                |       |
-|         | TOTAL                                       | __8__|
+| 6       | Add contributors info                       | 1   |
+| 7       | Add sort function                            | 2   |
+| 8       | Adaptive the app                            | 0.5   |
+| 9       | Add localStorage                            | 1.5   |
+| 10      | Refactoring, correct readme, add microdata  |  1     |
+|         | TOTAL                                       | __13__|
 
 
 
