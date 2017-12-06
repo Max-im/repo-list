@@ -25,3 +25,32 @@ li{
 .hide{
   display: none !important;
 }
+
+.sortBlock{
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.sortBy{
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.sortBy_active{
+  padding: 3px 10px 3px 25px;
+  position: relative;
+
+}
+
+.sortBy_active:after{
+  content: "\f15d";
+  font: normal normal normal 14px FontAwesome;
+  left: 6px;
+  top: 5px;
+  color: gold;
+  position: absolute;
+}
