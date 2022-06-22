@@ -1,6 +1,6 @@
 # __Repo-list__
 
-
+Displays list of repo, you can mark repo as favorit and unmark on "favorits" page
 
 ## __App info:__
 | Name        | Repo-list |
